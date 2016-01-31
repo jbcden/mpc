@@ -1,6 +1,5 @@
 function! mpc#EncodeSong(item)
   let item = split(a:item, " @")
-  " echo item
   let song = {'position': item[0],
       \ 'artist': '@ar' . item[1] . 'ar@',
       \ 'album': '@al' . item[2] . 'al@',
